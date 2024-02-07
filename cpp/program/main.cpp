@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int i, n = 0;
+    int i, n = 1;
     // int id;
     string name;
     string bidang;

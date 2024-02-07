@@ -10,7 +10,7 @@ using namespace std;
 class Anggota{
     //private attributes.
     private:
-        // int id;
+        int id;
         string name;
         string bidang;
         string partai;
@@ -22,7 +22,7 @@ class Anggota{
         //constructor. The note that it doesn't have any return type.
         Anggota(){
             //set name and gender to default value.
-            // this->id = 0;
+            this->id = 0;
             this->name = "";
             this->bidang = '-';
             this->partai = '-';
@@ -30,9 +30,9 @@ class Anggota{
 
         //Another constructor
         //
-        Anggota(string name, string bidang, string partai){
+        Anggota(int id, string name, string bidang, string partai){
             //"This" object'a attributes will be set with the given parameter attributes.
-            // this->id = id;
+            this->id = id;
             this->name = name;
             this->bidang = bidang;
             this->partai = partai;
@@ -40,15 +40,15 @@ class Anggota{
 
         /* Getter and Setter. */
 
-        // //Get id.
-        // int get_id(){
-        //     return this->id;
-        // }
+        //Get id.
+        int get_id(){
+            return this->id;
+        }
 
-        // //Set id.
-        // void set_id(int id){
-        //     this->id = id;
-        // }
+        //Set id.
+        void set_id(int id){
+            this->id = id;
+        }
 
         //Get name.
         string get_name(){
@@ -82,14 +82,14 @@ class Anggota{
 
         /*Public methods, or in this case if you prefer, "behaviors".*/
         //Anggota eats.
-        void eat(){
-            cout << this->name << " is eating! " << '\n';
-        }
+        // void eat(){
+        //     cout << this->name << " is eating! " << '\n';
+        // }
 
-        //Anggota sleep
-        void sleep(){
-            cout << this->name << " is sleeping! " << '\n';
-        }
+        // //Anggota sleep
+        // void sleep(){
+        //     cout << this->name << " is sleeping! " << '\n';
+        // }
 
         /* Destructors*/
         //Default destructor. leave it blank for now.
